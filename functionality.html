@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soraya Modest Clothing - Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Reset */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #997a8d;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .categories {
+            max-width: 1000px;
+            margin: 20px auto;
+            color: #fff; 
+            font-size: 25px;
+            text-align: center;
+            
+        }
+
+        .category {
+            background-color: #917684;
+            padding: 6px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product:hover {
+            background-color: #d5d1d5;
+            padding: 10px;
+        }
+
+        /* Product Display Styles */
+        .product-details {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 290px;
+            height: 410px;
+            margin-bottom: 15px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #777696;
+            margin-bottom: 10px;
+        }
+/* static button for cart */
+        .add-to-cart-button {
+            display: block;
+            width: 270px;
+            padding: 10px;
+            background-color: #796878;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #aa98a9;
+        }
+        .go-to-cart {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #777696;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+
+        .go-to-cart:hover {
+            background-color: #aa98a9;
+        }
+        .proceed-to-cart-button {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            background-color: #917684;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 470px;
+        }
+
+        .proceed-to-cart-button:hover {
+            background-color: #aa98a9;
+        }
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #796878;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+        <h1>Soraya Modest Clothing </h1>
+        <nav>
+            <!-- Navigation menu -->
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="functionality.html">Shop</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="shoppingcart.html">Cart</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <!-- Product Display Section -->
+    <div class="categories">
+        <!-- Category 4 : Hijabs-->
+        <div class= "category">
+            <p>Hijabs</p>
+        </div>
+    </div>
+    <div class="product-details">
+        <!-- Product 1 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/9e/65/ea/9e65eac5af0a41eee6cc0e544e99fe2f.jpg" alt="Product 1 Image">
+            <p class="product-description">Luxe Chiffon Hijabs (cream)<br>Colours available</p>
+            <p class="product-price">Rs. 599</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page hijab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/8e/4c/ba/8e4cba375f726b1972d18db2ac250e5d.jpg" alt="Product 2 Image">
+            <p class="product-description">Everyday Cotton Crinkle Hijab (dusty pink)<br>Colours available</p>
+            <p class="product-price">Rs. 699</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page hijab.html" class="add-to-cart-button">View Product</a>
+
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/84/de/da/84deda7ff08a1cd768bb0ce6256cff71.jpg" alt="Product 3 Image">
+            <p class="product-description">Plain Lawn Hijabs (blush)<br>Colours available</p>
+            <p class="product-price">Rs. 499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page hijab.html" class="add-to-cart-button">View Product</a>
+
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/7d/62/42/7d62427f3c9d793b61d42b6c98c82bd9.jpg" alt="Product 4 Image">
+            <p class="product-description">Viscose Crinkle Hijabs (deep turquoise)<br>Colours available</p>
+            <p class="product-price">Rs. 599</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page hijab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/84/fd/02/84fd0275deaed59a57f93d44a43a05da.jpg" alt="Product 5 Image">
+            <p class="product-description">Viscose Hijab (charcoal) <br> Colours available</p>
+            <p class="product-price">Rs. 599</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page hijab.html" class="add-to-cart-button">View Product</a>
+
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/d4/15/f8/d415f840d817dbbf8fa7d67e78626d6f.jpg" alt="Product 6 Image">
+            <p class="product-description">Organza Hijab (sage green) <br> Colours available </p>
+            <p class="product-price">Rs. 699</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page hijab.html" class="add-to-cart-button">View Product</a>
+
+        </div>
+    </div>  
+    <div class="categories">
+        <!-- Category 1 : Abayas-->
+        <div class= "category">
+            <p> Abayas</p>
+        </div>
+    </div>
+    <div class="product-details">
+        <!-- Product 1 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/9c/dd/58/9cdd58eedaea298f8690d2e6d3173f35.jpg" alt="Product 1 Image">
+            <p class="product-description">Leena Abaya (Tea Pink) </p>
+            <p class="product-price">Rs. 5799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page abaya.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/c7/81/6f/c7816f277eb1dcadd6d8a17f0e65e41a.jpg" alt="Product 2 Image">
+            <p class="product-description">Leila Abaya (Powder Blue)</p>
+            <p class="product-price">Rs. 4899</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page abaya.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/474x/21/10/f8/2110f89d6a214a91263d7bc824b643f4.jpg" alt="Product 3 Image">
+            <p class="product-description">Rahma Abaya (Dusty Rose)</p>
+            <p class="product-price">Rs. 5299</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page abaya.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/84/62/cf/8462cf0c627155d1b3c9e51a7e9fe79e.jpg" alt="Product 4 Image">
+            <p class="product-description"> Abeer Kaftan Abaya (Baby Pink)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page abaya.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/32/9c/cb/329ccbe6c1e483b4b976ce094899d9c9.jpg" alt="Product 5 Image">
+            <p class="product-description">Inaya Abaya (Rose)</p>
+            <p class="product-price">Rs. 4899</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page abaya.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/44/34/7e/44347ed9f3177d1323dac04e38761873.jpg" alt="Product 6 Image">
+            <p class="product-description">Daima Abaya (Brown)</p>
+            <p class="product-price">Rs. 5399</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page abaya.html" class="add-to-cart-button">View Product</a>
+        </div>
+    </div>
+    <div class="categories">
+        <!-- Category 1 : Abayas-->
+        <div class= "category">
+            <p> Jilbabs</p>
+        </div>
+    </div>
+    <div class="product-details">
+        <!-- Product 1 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/ce/67/ea/ce67ea554397ff08961f9458bbdcf094.jpg" alt="Product 1 Image">
+            <p class="product-description">Plain Silk Jilbab (brown)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page jilbab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/a1/cb/30/a1cb30391229af757f9a18459fa1a5a3.jpg" alt="Product 2 Image">
+            <p class="product-description">Plain Silk Jilbab (pistachio)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page jilbab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/60/e7/1b/60e71b3924b61c262081041f235c7e33.jpg" alt="Product 3 Image">
+            <p class="product-description">Plain Silk Jilbab (ruby)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page jilbab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/cf/6c/4b/cf6c4b7d568b0e096aab81ea3438f6bb.jpg" alt="Product 4 Image">
+            <p class="product-description">Plain Silk Jilbab (slate blue)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page jilbab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/736x/97/77/b4/9777b4cdf3e377cd9b7db3c800f80451.jpg" alt="Product 5 Image">
+            <p class="product-description">Plain Silk Jilbab (emerald)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page jilbab.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/5f/7f/49/5f7f49a0addf78041403a86d04a0caaa.jpg" alt="Product 6 Image">
+            <p class="product-description">Plain Silk Jilbab (aqua)</p>
+            <p class="product-price">Rs. 4799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page jilbab.html" class="add-to-cart-button">View Product</a>
+        </div>
+    </div>   
+    <div class="categories">
+        <!-- Category 3 : Dresses-->
+        <div class= "category">
+            <p>Dresses</p>
+        </div>
+    </div>
+    <div class="product-details">
+        <!-- Product 1 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/e3/88/cd/e388cdb733c2622f10e7ce2e2a877074.jpg" alt="Product 1 Image">
+            <p class="product-description">Zinnia  Dress</p>
+            <p class="product-price">Rs. 4499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page dress.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/91/7c/d8/917cd8417112fe942b9893e5f8efe647.jpg" alt="Product 2 Image">
+            <p class="product-description">Cynthia Dress</p>
+            <p class="product-price">Rs. 5499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page dress.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/89/e7/d4/89e7d4916e93b697fe13d5ee4c142dc4.jpg" alt="Product 3 Image">
+            <p class="product-description">Dahlia Tiered Dress</p>
+            <p class="product-price">Rs. 3899</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page dress.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/85/75/59/857559a86248ab1e321bfd1ed6ea2d18.jpg" alt="Product 4 Image">
+            <p class="product-description">Amaryllis Tierred Dress</p>
+            <p class="product-price">Rs. 5499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page dress.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/9a/2e/12/9a2e1270fda808f52a47e270b12ddbf4.jpg" alt="Product 5 Image">
+            <p class="product-description">Flora Collared Dress</p>
+            <p class="product-price">Rs. 4299</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page dress.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/90/70/57/9070574b5d7ad026ca00d026b85a1d15.jpg" alt="Product 6 Image">
+            <p class="product-description">Azalea Tie-Up Dress</p>
+            <p class="product-price">Rs. 4499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page dress.html" class="add-to-cart-button">View Product</a>
+        </div>
+    </div>   
+ 
+    <div class="categories">
+        <!-- Category 1 : Loungewear-->
+        <div class= "category">
+            <p>Loungewear</p>
+        </div>
+    </div>
+    <div class="product-details">
+        <!-- Product 1 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/736x/ff/08/e2/ff08e24eabc87b1f1daac351e036d155.jpg">
+            <p class="product-description">Amelia Set with layered top (ivory)<br></p>
+            <p class="product-price">Rs. 2499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page loungewear.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/1c/9b/11/1c9b11b829ce5021e94369df3ed50718.jpg" alt="Product 2 Image">
+            <p class="product-description">Amarah Set with flared trousers (pearl white)</p>
+            <p class="product-price">Rs. 2799</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page loungewear.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/5a/7f/8d/5a7f8d2601da89447a3fdffeb75c6a56.jpg" alt="Product 3 Image">
+            <p class="product-description">Reyna tie up set (blush)<br> </p>
+            <p class="product-price">Rs. 2699</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page loungewear.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/474x/b5/0d/f8/b50df8d641a3a46048b049e051060db2.jpg" alt="Product 4 Image">
+            <p class="product-description">Arabella button up set (baby pink)</p>
+            <p class="product-price">Rs. 2599</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page loungewear.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/1b/33/0e/1b330ebf341c797cdf8215115cd95d8a.jpg" alt="Product 5 Image">
+            <p class="product-description">Safa Wide Leg set (mauve and black) </p>
+            <p class="product-price">Rs. 2499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page loungewear.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/59/4f/cc/594fcc298a97c05282babc8efa639b09.jpg" alt="Product 6 Image">
+            <p class="product-description">Luna high-low set (pearl white) </p>
+            <p class="product-price">Rs. 2599</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page loungewear.html" class="add-to-cart-button">View Product</a>
+        </div>
+    </div>   
+    <div class="categories">
+        <!-- Category 6 : Accessories-->
+        <div class= "category">
+            <p>Accessories</p>
+        </div>
+    </div>
+    <div class="product-details">
+        <!-- Product 1 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/be/97/a0/be97a0ccdc595399c397324e891dd529.jpg" alt="Product 1 Image">
+            <p class="product-description">No-snag Hijab Magnets (flower shaped)<br><br></p>
+            <p class="product-price">Rs. 499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page accessories.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/a8/f9/f2/a8f9f2014fa6aef6bbbaa7fe1def8143.jpg" alt="Product 2 Image">
+            <p class="product-description">No-snag hijab Magnets (round)<br>Colours Available</p>
+            <p class="product-price">Rs. 499</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page accessories.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/91/c7/dc/91c7dc3ec6ca1948020ce7f085b4b2ec.jpg" alt="Product 3 Image">
+            <p class="product-description">Cross-over Tube caps (with matching loop pins)<br>Colours Available</p>
+            <p class="product-price">Rs. 399</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page accessories.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/91/dd/1e/91dd1e929f2f5601cede80fdc21bb217.jpg" alt="Product 4 Image">
+            <p class="product-description">Floral Bliss Scrunchies</p>
+            <p class="product-price">Rs. 299</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page accessories.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/48/99/30/489930ec0752ec5ecc64de8be304eb87.jpg" alt="Product 5 Image">
+            <p class="product-description">Straigt Pin Wheels</p>
+            <p class="product-price">Rs. 199</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page accessories.html" class="add-to-cart-button">View Product</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img class="product-image" src="https://i.pinimg.com/564x/f1/1b/56/f11b56216005897d3e3dc57e56fae6d8.jpg" alt="Product 6 Image">
+            <p class="product-description">Half-Niqabs</p>
+            <p class="product-price">Rs. 399</p>
+            <a href="#" class="add-to-cart-button">Add to Cart</a><br>
+            <a href="products page accessories.html" class="add-to-cart-button">View Product</a>
+        </div>
+    </div>   
+    
+    <a href="shoppingcart.html" class="proceed-to-cart-button">Proceed to Cart</a>
+    <br>
+    <a href="categories.html" class="proceed-to-cart-button">Back to Categories</a>
+   
+    <!-- Go to Cart Button -->
+    <a href="shoppingcart.html" class="go-to-cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+      </a>
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Soraya Modest Clothing</p>
+    </footer>
+</body>
+</html>

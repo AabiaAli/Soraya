@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soraya Modest Clothing - Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+ /* General Reset */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #997a8d;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Cart Display Styles */
+        .cart {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #b39eb5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            align-items: center;
+            border-bottom: 1px solid #777696;
+            padding: 10px 0;
+            gap: 10px;
+        }
+
+        .product-image {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-name {
+            font-weight: bold;
+        }
+
+        .quantity-input {
+            width: 50px;
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #777696;
+        }
+
+        .total-price {
+            font-weight: bold;
+            color: #777696;
+        }
+
+        .remove-button {
+            background-color: #796878;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .remove-button:hover {
+            background-color: #aa98a9;
+        }
+
+        /* Checkout and Continue Shopping Styles */
+        .cart-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .proceed-to-checkout-button {
+            background-color: #777696;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .proceed-to-checkout-button:hover {
+            background-color: #aa98a9;
+        }
+
+        .continue-shopping {
+            color: #777696;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .continue-shopping:hover {
+            color: #aa98a9;
+        }
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #796878;
+            margin-top: 20px;
+            color: #fff;
+        }
+ /* Add responsive styles for smaller screens */
+        @media screen and (max-width: 600px) {
+            .cart-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .product-info {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Your existing HTML here -->
+
+ <header>
+        <h1>Soraya Modest Clothing</h1>
+        <p>Shopping Cart</p>
+    </header>
+
+    <!-- Cart Display Section -->
+    <div class="cart">
+        <!-- Cart Items -->
+        <div class="cart-item">
+            <img class="product-image" src="https://i.pinimg.com/564x/84/de/da/84deda7ff08a1cd768bb0ce6256cff71.jpg" alt="Product 1 Image">
+            <div class="product-info">
+                <p class="product-name">Plain Lawn Hijab (blush)</p>
+                <input class="quantity-input" type="number" value="1">
+            </div>
+            <p class="total-price">Rs. 499</p>
+            <button class="remove-button">Remove</button>
+        </div>
+        <!-- Cart Items -->
+        <div class="cart-item">
+            <img class="product-image" src="https://i.pinimg.com/474x/21/10/f8/2110f89d6a214a91263d7bc824b643f4.jpg" alt="Product 1 Image">
+            <div class="product-info">
+                <p class="product-name">Rahma Abaya (dusty rose)</p>
+                <input class="quantity-input" type="number" value="1">
+            </div>
+            <p class="total-price">Rs. 5299</p>
+            <button class="remove-button">Remove</button>
+        </div>
+        <!-- Cart Items -->
+        <div class="cart-item">
+            <img class="product-image" src="https://i.pinimg.com/564x/be/97/a0/be97a0ccdc595399c397324e891dd529.jpg" alt="Product 1 Image">
+            <div class="product-info">
+                <p class="product-name">No-snag hijab magnets (flower shaped)</p>
+                <input class="quantity-input" type="number" value="1">
+            </div>
+            <p class="total-price">Rs. 499</p>
+            <button class="remove-button">Remove</button>
+        </div>
+        <!-- Repeat cart items as needed -->
+
+        <!-- Total Cost -->
+        <div class="total-cost">
+            <p>Total: Rs. 6297</p>
+        </div>
+
+        <!-- Checkout and Continue Shopping Buttons -->
+        <div class="cart-buttons">
+            <a href="checkout page.html" class="proceed-to-checkout-button">Proceed to Checkout</a>
+            <a href="categories.html" class="continue-shopping">Continue Shopping</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var quantityInputs = document.querySelectorAll('.quantity-input');
+            var removeButtons = document.querySelectorAll('.remove-button');
+    
+            quantityInputs.forEach(function (input) {
+                input.addEventListener('input', updateTotalCost);
+                input.addEventListener('change', ensureMinimumQuantity);
+            });
+    
+            removeButtons.forEach(function (button) {
+                button.addEventListener('click', removeItem);
+            });
+    
+            function ensureMinimumQuantity() {
+                var quantity = parseInt(this.value);
+                if (isNaN(quantity) || quantity < 1) {
+                    this.value = 1;
+                }
+                updateTotalCost.call(this);
+            }
+    
+            function updateTotalCost() {
+                var cartItem = this.closest('.cart-item');
+                var priceElement = cartItem.querySelector('.total-price');
+                var quantity = parseInt(this.value);
+                var price = parseFloat(priceElement.textContent.replace('Rs. ', ''));
+                
+                if (isNaN(quantity) || quantity < 1) {
+                    quantity = 1;
+                }
+    
+                var total = price * quantity;
+                priceElement.textContent = 'Rs. ' + total.toFixed(2);
+                updateCartTotal();
+            }
+    
+            function removeItem() {
+                var cartItem = this.closest('.cart-item');
+                cartItem.remove();
+                updateCartTotal();
+            }
+    
+            function updateCartTotal() {
+                var totalCostElement = document.querySelector('.total-cost p');
+                var cartItems = document.querySelectorAll('.cart-item');
+                var total = 0;
+                cartItems.forEach(function (item) {
+                    var priceElement = item.querySelector('.total-price');
+                    var price = parseFloat(priceElement.textContent.replace('Rs. ', ''));
+                    total += price;
+                });
+                totalCostElement.textContent = 'Total: Rs. ' + total.toFixed(2);
+            }
+        });
+    </script>
+    
+       
+
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Soraya Modest Clothing Clothing</p>
+    </footer>    
+</body>
+</html>
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <title>Soraya Modest Clothing  - Categories</title>
+    <style>
+        /* General Reset */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+            background-image: url(https://i.pinimg.com/474x/a4/f5/f1/a4f5f12124b1c4e4b53e2344fb0ec945.jpg);
+            color: #fff;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #997a8d;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Categories Styles */
+        .categories {
+            max-width: 990px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .category {
+            background-color: #917684;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .category:hover {
+            background-color: #917684;
+            opacity: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+        }
+
+        .category-image {
+            width: 260px;
+            height: 60vh;
+            margin-bottom: 15px;
+            margin: 20px;
+        }
+
+        .add-to-cart-button {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            background-color: #796878;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #aa98a9;
+        }
+
+        .go-to-cart {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #777696;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 20px;
+            font-size: 24px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+
+        .go-to-cart:hover {
+            background-color: #aa98a9;
+        }
+        .back-to-home {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #777696;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .back-to-home:hover {
+            background-color: #aa98a9;
+        }
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #796878;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <!-- Header content -->
+            <h1>Soraya Modest Clothing </h1>
+            <nav>
+                <!-- Navigation menu -->
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="functionality.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="shoppingcart.html">Cart</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Categories Section -->
+    <div class="categories">
+
+                <!-- Category 2: Modest Jilbabs -->
+                <div class="category">
+                    <img class="category-image" src="https://i.pinimg.com/474x/a4/f5/f1/a4f5f12124b1c4e4b53e2344fb0ec945.jpg" alt="Modest Jilbabs Image">
+                    <p>JILBABS :-<br> Elegant and sophisticated attire that enhances your beauty and grace</p>
+                    <a href="functionality.html" class="add-to-cart-button">Buy Jilbabs</a>
+                </div>
+        <!-- Category 1: Modest Abayas -->
+        <div class="category">
+            <img class="category-image" src="https://i.pinimg.com/564x/67/67/e7/6767e7f7643a86c66e25b7f31aa50bf1.jpg" alt="Modest Abayas Image">
+            <p>ABAYAS :-<br> Modest and elegant garments that are well suited for every occasion</p>
+            <a href="functionality.html" class="add-to-cart-button">Buy Abayas</a>
+        </div>
+
+
+
+        <!-- Category 3: Modest Dresses -->
+        <div class="category">
+            <img class="category-image" src="https://i.pinimg.com/474x/94/0a/3a/940a3a0983257785603041bec8190af9.jpg" alt="Modest Dresses Image">
+            <p>DRESSES :-<br> Classy and modest pieces that are perfect for your fit and style</p>
+            <a href="functionality.html" class="add-to-cart-button">Buy Dresses</a>
+        </div>
+
+        <!-- Category 4: Modest Hijabs -->
+        <div class="category">
+            <img class="category-image" src="https://i.pinimg.com/564x/3c/5f/a6/3c5fa60a25ba3e47882fdbfd32ad55d4.jpg" alt="Modest Hijabs Image">
+            <p>HIJABS :- <br>Beautiful and colorful headscarves that express personality</p>
+            <a href="functionality.html" class="add-to-cart-button">Buy Hijabs</a>
+        </div>
+
+        <!-- Category 5: Modest Loungewear -->
+        <div class="category">
+            <img class="category-image" src="https://i.pinimg.com/564x/49/7a/9e/497a9e8282049704032c085ea6f5d96f.jpg" alt="Modest loungewear Image">
+            <p>LOUNGEWEAR :-<br> Comfortable and cozy clothing that you can relax and unwind in</p>
+            <a href="functionality.html" class="add-to-cart-button">Buy Loungewear</a>
+        </div>
+
+        <!-- Category 6: Modest Accessories -->
+        <div class="category">
+            <img class="category-image" src="https://i.pinimg.com/564x/9c/2f/49/9c2f497bc67d416340a094d177c7a55d.jpg" alt="Modest Accessories Image">
+            <p>ACCESSORIES :- <br> Chic and trendy items that add flair and charm to your look</p>
+            <a href="functionality.html" class="add-to-cart-button">Buy Accessories</a>
+        </div>
+    </div>
+
+    <!-- Back to Home -->
+    <a href="homepage.html" class="back-to-home">Back to Home</a>
+
+    <!-- Go to Cart Button -->
+    <a href="shoppingcart.html" class="go-to-cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>
+    </a>
+
+    <footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2023 Soraya Modest Clothing</p>
+    </footer>
+</body>
+</html>
