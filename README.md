@@ -2,7 +2,7 @@
 
 Welcome to Soraya, an elegant and modern frontend project showcasing a modest clothing brand designed with simplicity and grace. Built using HTML, CSS, and JavaScript, this responsive site highlights various product categories such as Abayas, Jilbabs, Dresses, Hijabs, Loungewear, and Accessories.
 
-Live Site: [https://sorayaclothing.netlify.app](https://sorayaclothing.netlify.app)
+[Click here to check it out](https://sorayaclothing.netlify.app)
 
 ## Features
 
@@ -43,15 +43,13 @@ To run this project locally:
 
 This project is deployed with Netlify.
 
-Live URL: [https://sorayaclothing.netlify.app](https://sorayaclothing.netlify.app)
+Live URL: [SorayaClothing](https://sorayaclothing.netlify.app)
 
 ## Contributors
 
-Aabia Ali  
-GitHub: [https://github.com/AabiaAli](https://github.com/AabiaAli)
+[Aabia Ali](https://github.com/AabiaAli)
 
-Zara Noor  
-GitHub: [https://github.com/ZaraHEREhehe](https://github.com/ZaraHEREhehe)
+[Zara Noor](https://github.com/ZaraHEREhehe)
 
 ## License
 
