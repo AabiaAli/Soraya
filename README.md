@@ -53,4 +53,4 @@ Live URL: [https://sorayaclothing.netlify.app](https://sorayaclothing.netlify.ap
 
 ## License
 
-This project is open-source and free to use for educational or non-commercial purposes.
+This project is open source and free to use under the [MIT License](LICENSE).
